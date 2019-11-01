@@ -10,9 +10,9 @@ const penny = 01
 let amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
 if (Number.isNaN(amount)) {
-    console.log("Invalid");
+    console.log("Invalid.");
 } else if (amount < MIN || amount > MAX) {
-    console.log("Invalid");
+    console.log("Invalid.");
 } else {
     amount *= 100;
     let numbQuart = Math.floor(amount / quart);
