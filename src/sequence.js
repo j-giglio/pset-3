@@ -18,14 +18,14 @@ if (Number.isNaN(inptA)) {
 } else if (inptC > Number.MAX_SAFE_INTEGER || inptC < Number.MIN_SAFE_INTEGER) {
     console.log("\nInvalid.");
 } else if (inptA == inptB && inptB == inptC) {
-	console.log(“\nEqual.”);
+	console.log("\nEqual.");
 } else if ((inptA == inptB && inptB < inptC) || (inptA < inptB && inptB == inptC)) {
-	console.log(“\nIncreasing.”);
+	console.log("\nIncreasing.");
 } else if ((inptA == inptB && inptB > inptC) || (inptA > inptB && inptB == inptC)) {
-	console.log(“\nDecreasing.”);
+	console.log("\nDecreasing.");
 } else if (inptA < inptB && inptB < inptC) {
-	console.log(“\nStrictly Increasing.”);
+	console.log("\nStrictly Increasing.");
 } else if (inptA > inptB && inptB > inptC) {
-	console.log(“\nStrictly Decreasing.”);
+	console.log("\nStrictly Decreasing.");
 } else {
-	console.log(“\nUnordered.”);}
+	console.log("\nUnordered.");}
