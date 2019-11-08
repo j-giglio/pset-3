@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-console.log("\nEnter a letter grade")
+console.log("\nEnter a letter grade:")
 let grade = (readlineSync.question("\n"))
 let grade = grade.toUpperCase();
 
