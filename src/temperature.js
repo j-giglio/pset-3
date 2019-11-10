@@ -8,8 +8,6 @@ if (Number.isNaN(temp)) {
     console.log("\nInvalid.");
 } else if (temp > Number.MAX_SAFE_INTEGER || temp < Number.MIN_SAFE_INTEGER) {
     console.log("\nInvalid.");
-} else if (scale != "F" && scale != "C" && scale != "K") {
-    console.log("\nInvalid");
 } else if (scale == "F") {
     if (temp < 32) {
         console.log("\nSolid.");
@@ -34,4 +32,6 @@ if (Number.isNaN(temp)) {
     } else {
         console.log("\nLiquid.");
     }
+} else {
+    console.log("\nInvalid.");
 }
