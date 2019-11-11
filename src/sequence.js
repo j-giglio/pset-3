@@ -6,26 +6,26 @@ const inptB = Number(readlineSync.question(""))
 const inptC = Number(readlineSync.question(""))
 
 if (Number.isNaN(inptA)) {
-    console.log("\nInvalid.");
+    console.log("\nInvalid.\n");
 } else if (Number.isNaN(inptB)) {
-    console.log("\nInvalid.");
+    console.log("\nInvalid.\n");
 } else if (Number.isNaN(inptC)) {
-    console.log("\nInvalid.");
+    console.log("\nInvalid.\n");
 } else if (inptA > Number.MAX_SAFE_INTEGER || inptA < Number.MIN_SAFE_INTEGER) {
-    console.log("\nInvalid.");
+    console.log("\nInvalid.\n");
 } else if (inptB > Number.MAX_SAFE_INTEGER || inptB < Number.MIN_SAFE_INTEGER) {
-    console.log("\nInvalid.");
+    console.log("\nInvalid.\n");
 } else if (inptC > Number.MAX_SAFE_INTEGER || inptC < Number.MIN_SAFE_INTEGER) {
-    console.log("\nInvalid.");
+    console.log("\nInvalid.\n");
 } else if (inptA == inptB && inptB == inptC) {
-	console.log("\nEqual.");
+	console.log("\nEqual.\n");
 } else if ((inptA == inptB && inptB < inptC) || (inptA < inptB && inptB == inptC)) {
-	console.log("\nIncreasing.");
+	console.log("\nIncreasing.\n");
 } else if ((inptA == inptB && inptB > inptC) || (inptA > inptB && inptB == inptC)) {
-	console.log("\nDecreasing.");
+	console.log("\nDecreasing.\n");
 } else if (inptA < inptB && inptB < inptC) {
-	console.log("\nStrictly Increasing.");
+	console.log("\nStrictly Increasing.\n");
 } else if (inptA > inptB && inptB > inptC) {
-	console.log("\nStrictly Decreasing.");
+	console.log("\nStrictly Decreasing.\n");
 } else {
-	console.log("\nUnordered.");}
+	console.log("\nUnordered.\n");}
