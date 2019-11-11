@@ -2,71 +2,71 @@ const readlineSync = require("readline-sync");
 
 const inpt = (readlineSync.question("\nEnter a playing card: "));
 let suit = inpt.charAt(1);
-suit = suit.toLowerCase
-let val = inpt.charAt(0);
-val = val.toLowerCase
+suit = suit.toLowerCase();
+let rank = inpt.charAt(0);
+rank = rank.toLowerCase();
+suitMsg = ""
+rankMsg = ""
 
-{
-  switch (suit) {
-    case "c":
-        let suitMsg = "Clubs";
-        break;
-    case "d":
-         suitMsg = "Diamonds";
-        break;
-    case "s":
-         suitMsg = "Spades";
-        break;
-    case "h":
-         suitMsg = "Hearts";
-        break;
-    default:
-         let suitError = true;
-        break;
-  }
-
-  switch (val) {
-      case "2":
-          let valMsg = "Two";
-          break;
-        case "3":
-          valMsg = "Three";
-          break;
-      case "4":
-          valMsg = "Four";
-          break;
-      case "5":
-          valMsg = "Five";
-          break;
-      case "6":
-          valMsg = "Six";
-          break;
-      case "7":
-          valMsg = "Seven";
-          break;
-      case "8":
-          valMsg = "Eight";
-          break;
-      case "9":
-          valMsg = "Nine";
-          break;
-      case "t":
-          valMsg = "Ten";
-          break;
-     case "j":
-          valMsg = "Jack";
-          break;
-     case "q":
-          valMsg = "Queen";
-          break;
-      case "k":
-          valMsg = "King";
-          break;
-      case "a":
-          valMsg = "Ace";
-          break;
-      default:
-          valError = true;
-  }
+switch (suit) {
+  case "c":
+      suitMsg = "Clubs";
+      break;
+  case "d":
+      suitMsg = "Diamonds";
+      break;
+  case "s":
+      suitMsg = "Spades";
+      break;
+  case "h":
+      suitMsg = "Hearts";
+      break;
 }
-    console.log("\n" + valMsg + "of" + suitMsg + ".\n")
+
+switch (rank) {
+  case "2":
+      rankMsg = "Two";
+      break;
+  case "3":
+      rankMsg = "Three";
+      break;
+  case "4":
+      rankMsg = "Four";
+      break;
+  case "5":
+      rankMsg = "Five";
+      break;
+  case "6":
+      rankMsg = "Six";
+      break;
+  case "7":
+      rankMsg = "Seven";
+      break;
+  case "8":
+      rankMsg = "Eight";
+      break;
+  case "9":
+      rankMsg = "Nine";
+      break;
+  case "t":
+      rankMsg = "Ten";
+      break;
+  case "j":
+      rankMsg = "Jack";
+      break;
+  case "q":
+      rankMsg = "Queen";
+      break;
+  case "k":
+      rankMsg = "King";
+      break;
+  case "a":
+      rankMsg = "Ace";
+      break;
+}
+
+if (suitMsg == "" || rankMsg == "") {
+console.log("\nInvalid.\n")
+} else {
+console.log("\n" + rankMsg + " of " + suitMsg + ".\n")
+}
