@@ -10,9 +10,9 @@ const penny = 01
 let amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
 if (Number.isNaN(amount)) {
-    console.log("Invalid.");
+    console.log("Invalid.\n");
 } else if (amount < MIN || amount > MAX) {
-    console.log("Invalid.");
+    console.log("Invalid.\n");
 } else {
     amount *= 100;
     let numbQuart = Math.floor(amount / quart);
@@ -23,5 +23,5 @@ if (Number.isNaN(amount)) {
     amount %= nick;
     let numbPenny = Math.floor(amount / penny);
     amount %= penny;
-    console.log("\n" + numbQuart + " quarters, " + numbDime + " dimes, " + numbNick + " nickels, and " + numbPenny + " pennies");
+    console.log("\n" + numbQuart + " quarters, " + numbDime + " dimes, " + numbNick + " nickels, and " + numbPenny + " pennies\n");
 }
