@@ -5,66 +5,66 @@ let grade = (readlineSync.question("\n"))
 grade = grade.toUpperCase();
 
 if (grade.charAt(1) != "+" && grade.charAt(1) != "-" && grade.charAt(1) != "") {
-  console.log("\nInvalid.")
+  console.log("\nInvalid.\n")
 } else if (grade.charAt(2) != ""){
-  console.log("\nInvalid.")
+  console.log("\nInvalid.\n")
 } else if (grade == "F+" || grade == "F-") {
-    console.log("\nInvalid")
+    console.log("\nInvalid.\n")
 } else if (grade.charAt(0) == "A") {
     let numberGrade = 400;
     if (grade.charAt(1) === "-") {
     numberGrade -= 33;
     numberGrade /= 100
-    console.log("\nYour GPA is " + numberGrade + ".")
+    console.log("\nYour GPA is " + numberGrade + ".\n")
     } else {
       numberGrade /= 100
-      console.log("\nYour GPA is " + numberGrade + ".")
+      console.log("\nYour GPA is " + numberGrade + ".\n")
     }
 } else if (grade.charAt(0) == "B") {
     let numberGrade = 300;
     if (grade.charAt(1) === "+") {
     numberGrade += 33;
     numberGrade /= 100
-    console.log("\nYour GPA is " + numberGrade + ".")
+    console.log("\nYour GPA is " + numberGrade + ".\n")
     } else if (grade.charAt(1) === "-") {
     numberGrade -= 33;
     numberGrade /= 100
-    console.log("\nYour GPA is " + numberGrade + ".")
+    console.log("\nYour GPA is " + numberGrade + ".\n")
     } else {
       numberGrade /= 100
-      console.log("\nYour GPA is " + numberGrade + ".")
+      console.log("\nYour GPA is " + numberGrade + ".\n")
     }
   } else if (grade.charAt(0) == "C") {
     let numberGrade = 200;
     if (grade.charAt(1) === "+") {
     numberGrade += 33;
     numberGrade /= 100
-    console.log("\nYour GPA is " + numberGrade + ".")
+    console.log("\nYour GPA is " + numberGrade + ".\n")
     } else if (grade.charAt(1) === "-") {
     numberGrade -= 33;
     numberGrade /= 100
-    console.log("\nYour GPA is " + numberGrade + ".")
+    console.log("\nYour GPA is " + numberGrade + ".\n")
     } else {
       numberGrade /= 100
-      console.log("\nYour GPA is " + numberGrade + ".")
+      console.log("\nYour GPA is " + numberGrade + ".\n")
     }
 } else if (grade.charAt(0) == "D") {
     let numberGrade = 100;
     if (grade.charAt(1) === "+") {
     numberGrade += 33;
     numberGrade /= 100
-    console.log("\nYour GPA is " + numberGrade + ".")
+    console.log("\nYour GPA is " + numberGrade + ".\n")
     } else if (grade.charAt(1) === "-") {
     numberGrade -= 33;
     numberGrade /= 100
-    console.log("\nYour GPA is " + numberGrade + ".")
+    console.log("\nYour GPA is " + numberGrade + ".\n")
     } else {
       numberGrade /= 100
-      console.log("\nYour GPA is " + numberGrade + ".")
+      console.log("\nYour GPA is " + numberGrade + ".\n")
     }
 } else if (grade.charAt(0) == "F") {
     let numberGrade = 0;
-    console.log("\nYour GPA is " + numberGrade + ".")
+    console.log("\nYour GPA is " + numberGrade + ".\n")
 } else {
-  console.log("\nInvalid.")
+  console.log("\nInvalid.\n")
   }
