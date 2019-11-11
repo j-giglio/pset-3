@@ -10,12 +10,12 @@ if (Number.isNaN(grade)) {
     console.log("\nInvalid.\n");
 } else if (grade <= 100 && grade >= 90) {
     console.log("\nYou got an A.\n")
-} else if (grade <= 89 && grade >= 80) {
+} else if (grade < 90 && grade >= 80) {
     console.log("\nYou got an B.\n")
-} else if (grade <= 79 && grade >= 70) {
+} else if (grade < 80 && grade >= 70) {
     console.log("\nYou got an C.\n")
-} else if (grade <= 69 && grade >= 60) {
+} else if (grade < 70 && grade >= 60) {
     console.log("\nYou got an D.\n")
-} else if (grade <= 59) {
+} else if (grade < 60) {
     console.log("\nYou got an F.\n")
 } 
